@@ -9,5 +9,5 @@ class EventAdmin(SummernoteModelAdmin):
     search_fields = ('title', 'content')
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('status', 'listed_on')
-    summernote_fields = ('content',)
+    summernote_fields = ('details')
 
